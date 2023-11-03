@@ -1,11 +1,98 @@
 /* Add your CSS to this file */
+
+:root{
+    --navLink-color: #6b7280;
+    --navLink-color-hover: #5a67d8;
+    --hero-bg-color: #e2e8f0;
+    --heading-color: #48bb78;
+    --bg-color: #48BB78;
+    --default-font: -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    
+}
 body {
     margin: 0;
-    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    overflow-x: hidden;
+    font-family: var(--default-font);
 }
+
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+
+header .container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+header .container h1{
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    font-weight: 500;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--navLink-color);
+}
+
+.overview-hero{
+    
+    padding: 90px 0;
+    background-color: var(--hero-bg-color);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .overview-hero p{
+    width: 95%;
+}
+main .overview-hero h2{
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    word-spacing: 1.7px;
+}
+main .overview-hero div{
+    
+    padding-left: 35px;
+}
+.overview-hero-image img{
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin-right: 50px;
 }

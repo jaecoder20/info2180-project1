@@ -204,3 +204,48 @@ main .overview-hero div{
     justify-content: center;
     align-items: center;
 }
+
+
+.stories h2,a{
+    color: var(--navLink-color-hover);
+    margin-bottom: 40px;
+}
+
+.stories img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: right;
+    margin-right: 40px;
+}
+
+.stories article {
+    display: flex;
+    margin-bottom: 60px;
+    /* gap: 30px; */
+}
+
+.stories .container article:first-of-type h3{
+    width: 60%;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.stories .container article:last-of-type h3{
+    width: 80%;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.stories .container article .article-body p:first-of-type {
+    margin-bottom: 15px;
+    width: 95%;
+}
+.stories .container article .article-body p:last-of-type a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.newsletter{
+    margin-top: 90px;
+}
